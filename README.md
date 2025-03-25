@@ -4,15 +4,6 @@ This repository converts `.vsi` WSIs into `.svs` format at using the `large_imag
 
 ---
 
-## Features
-
-- Converts Olympus `.vsi` WSIs to `.svs`
-- Preserves full resolution (no downsampling)
-- Extracts and embeds metadata into the TIFF description tag
-- Tiled read/write to handle large files efficiently
-
----
-
 ## Dependencies
 
 Make sure the following packages are installed:
