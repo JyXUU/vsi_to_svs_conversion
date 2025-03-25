@@ -8,7 +8,6 @@ This repository converts `.vsi` WSIs to `.svs` format using the `large-image` li
 
 ```bash
 bash setup_env.sh # Create and Activate Environment
-
 python requirements.txt # Install Required Dependencies
 ```
 ---
