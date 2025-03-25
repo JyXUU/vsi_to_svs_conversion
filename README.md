@@ -1,2 +1,33 @@
-# vsi_to_svs_conversion
-A repository for converting .vsi file to .svs file
+# VSI to SVS Converter
+
+This script converts `.vsi` Whole Slide Images (WSIs) into `.svs` format at **full resolution** using the `large_image` library with the Bioformats tilesource.
+
+---
+
+## Features
+
+- Converts Olympus `.vsi` WSIs to `.svs`
+- Preserves full resolution (no downsampling)
+- Extracts and embeds metadata into the TIFF description tag
+- Tiled read/write to handle large files efficiently
+
+---
+
+## Dependencies
+
+Make sure the following packages are installed in your environment:
+
+- `large_image[source_bioformats]`
+- `tifffile`
+- `tqdm`
+- `numpy`
+- `javabridge`
+- `bioformats`
+- Java (JDK, e.g., version 11+)
+
+### Conda Setup Example:
+
+```bash
+conda create -n vsi_bio_env python=3.10
+conda activate vsi_bio_env
+pip install large-image[source_bioformats] tifffile tqdm numpy
