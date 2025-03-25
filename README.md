@@ -1,6 +1,6 @@
 # VSI to SVS Conversion
 
-This repository converts `.vsi` WSIs to `.svs` format using the `large-image` library with the **Bioformats** backend.
+This repository converts `.vsi` WSIs to `.svs` format using the `large-image` library with the **Bioformats**.
 
 ---
 
