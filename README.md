@@ -1,24 +1,22 @@
-# VSI to SVS Converter
+# VSI to SVS Full-Resolution Conversion with Metadata
 
-This repository converts `.vsi` WSIs into `.svs` format at using the `large_image` library with the Bioformats tilesource.
+This repository converts `.vsi` WSIs to `.svs` format using the `large-image` library with the **Bioformats** backend.
 
 ---
 
-## Dependencies
+## Environment Setup
 
-Make sure the following packages are installed:
-
-- `large_image[source_bioformats]`
-- `tifffile`
-- `tqdm`
-- `numpy`
-- `javabridge`
-- `bioformats`
-- Java (JDK, e.g., version 11+)
-
-### Conda Setup Example:
+### 1. Create and Activate Environment
 
 ```bash
-conda create -n vsi_bio_env python=3.10
-conda activate vsi_bio_env
-pip install large-image[source_bioformats] tifffile tqdm numpy
+bash setup_env.sh
+
+### 2. Install Required Dependencies
+
+```bash
+python requirements.txt
+
+## Usage
+
+```bash
+python vsi_to_svs.py /path/to/.vsi /path/to/.svs
