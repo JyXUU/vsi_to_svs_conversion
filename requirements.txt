@@ -1,6 +1,6 @@
-large-image[source_bioformats]
+large-image
+large-image-source-bioformats
 tifffile
 tqdm
 numpy
-javabridge
-bioformats
+python-javabridge
